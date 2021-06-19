@@ -14,5 +14,6 @@ while (lowercase <= 122)
 putchar(lowercase);
 lowercase++;
 }
+putchar('\n');
 return (0);
 }
