@@ -10,11 +10,12 @@ int main(void)
 	int count = 0;
 	char word[] = "Holberton";
 
-	while (count <= 7)
+	while (count <= 8)
 	{
 	putchar(word[count]);
 	count++;
 	}
+	putchar('\n');
 	return (0);
 }
 
