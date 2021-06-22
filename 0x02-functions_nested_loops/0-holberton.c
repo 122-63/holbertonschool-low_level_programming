@@ -9,9 +9,10 @@ int main(void)
 {
 	int count = 0;
 	char word[] = "Holberton";
-	while ( count <= 7)
+
+	while (count <= 7)
 	{
-	_putchar(word[count]);
+	putchar(word[count]);
 	count++;
 	}
 	return (0);
