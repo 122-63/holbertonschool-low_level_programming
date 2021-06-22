@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * print_alphabet_x10()
+ * print_alphabet_x10 - print the alphabet x10
  *
  * Return: void.
  */
@@ -11,7 +11,15 @@ void print_alphabet_x10(void)
 
 	while (number <= 9)
 	{
-	print_alphabet();
+	int alphabet = 97;
+
+		while (alphabet <= 122)
+		{
+		_putchar(alphabet);
+		alphabet++;
+		}
+	_putchar('\n');
 	number++;
 	}
 }
+
