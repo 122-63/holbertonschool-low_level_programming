@@ -7,7 +7,7 @@
 
 int main(void)
 {
-	int count 0;
+	int count = 0;
 	char word[] = "Holberton";
 	while ( count <= 7)
 	{
