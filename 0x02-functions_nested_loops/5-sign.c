@@ -8,24 +8,17 @@
  */
 int print_sign(int n)
 {
-	if (n >= 1)
+	if (n > 0)
 	{
 		_putchar('+');
-	}
-	if (n < 0)
+		return (1);
+	} else if (n < 0)
 	{
 		_putchar('-');
+		return (-1);
 	}
-	if (n == 0)
-	{
-		_putchar('i');
-		_putchar('s');
-		_putchar(32);
-		_putchar('z');
-		_putchar('e');
-		_putchar('r');
-		_putchar('o');
-	}
+
+	_putchar('0');
 	return (0);
 }
 
