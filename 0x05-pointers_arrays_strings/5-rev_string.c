@@ -10,10 +10,12 @@ void rev_string(char *s)
 {
 	int sentences = strlen(s) - 1;
 	int n;
+	char auxiliar;
 
-	for (n = sentences; n >= 0; n--)
+	for (n = 0; n <= sentences / 2; n++)
 	{
-		putchar(s[n]);
+		auxiliar = s[n];
+		s[n] = s[sentences - n];
+		s[sentences - n] = auxiliar;
 	}
-	putchar('\n');
 }
