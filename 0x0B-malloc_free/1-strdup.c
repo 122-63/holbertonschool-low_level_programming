@@ -9,9 +9,16 @@
  */
 char *_strdup(const char *str)
 {
-	char *n = malloc(strlen(str) + 1);
+	char *n;
 
-	if (str == 0 || n == 0)
+	if (str == NULL)
+	{
+		return (NULL);
+	}
+
+	n = malloc(strlen(str) + 1);
+
+	if (str == NULL || n == NULL)
 	{
 		return (NULL);
 	}
