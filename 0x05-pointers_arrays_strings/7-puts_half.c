@@ -1,4 +1,4 @@
-#include <stdlib.h>
+#include "holberton.h"
 #include <stdio.h>
 #include <string.h>
 /**
@@ -10,25 +10,23 @@ void puts_half(char *str)
 {
 	/* variable contadora */
 	int m;
-	int len;
-
-	for (len = 0; len[str]; len++)
-		;
+	/*for (len = 0; len[str]; len++)*/
+	int len = strlen(str) - 1;
 	/* validacion si es una cadena par */
 	if (len % 2 == 0)
 	{
 		/* imprime numeros desde la mitad hasta el final */
 		for (m = len / 2; m <= len; m++)
 		{
-			putchar(str[m]);
+			_putchar(str[m]);
 		}
 	}
 	else
 	{
 		for (m = (len + 1) / 2; m <= len; m++)
 		{
-			putchar(str[m]);
+			_putchar(str[m]);
 		}
 	}
-	putchar('\n');
+	_putchar('\n');
 }
