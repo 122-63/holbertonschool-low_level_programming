@@ -10,7 +10,7 @@ void puts_half(char *str)
 {
 	/* variable contadora */
 	int m;
-	int len = strlen(str) - 1;
+	int len = strlen(str);
 	/* validacion si es una cadena par */
 	if (len % 2 == 0)
 	{
