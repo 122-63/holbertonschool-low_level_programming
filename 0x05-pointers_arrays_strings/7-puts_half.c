@@ -10,11 +10,8 @@ void puts_half(char *str)
 {
 	/* variable contadora */
 	int m;
-	int len;
-
-	for (len = 0; len[str]; len++)
-		;
-	/* validacion si es una cadena par */
+	int len = strlen(str) - 1;
+	/*for (len = 0; len[str]; len++)*/
 	if (len % 2 == 0)
 	{
 		/* imprime numeros desde la mitad hasta el final */
@@ -25,7 +22,7 @@ void puts_half(char *str)
 	}
 	else
 	{
-		for (m = (len - 1) / 2; m <= len; m++)
+		for (m = (len + 1) / 2; m <= len; m++)
 		{
 			_putchar(str[m]);
 		}
