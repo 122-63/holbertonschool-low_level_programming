@@ -10,7 +10,7 @@ void puts_half(char *str)
 {
 	/* variable contadora */
 	int m;
-	int len = strlen(str);
+	int len = strlen(str) - 1;
 	/*for (len = 0; len[str]; len++)*/
 	if (len % 2 == 0)
 	{
@@ -27,4 +27,5 @@ void puts_half(char *str)
 			_putchar(str[m]);
 		}
 	}
+	_putchar('\n');
 }
