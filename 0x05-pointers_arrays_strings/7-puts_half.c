@@ -15,7 +15,7 @@ void puts_half(char *str)
 	if (len % 2 == 0)
 	{
 		/* imprime numeros desde la mitad hasta el final */
-		for (m = (len - 1) / 2; m <= len; m++)
+		for (m = (len + 1) / 2; m <= len; m++)
 		{
 			_putchar(str[m]);
 		}
