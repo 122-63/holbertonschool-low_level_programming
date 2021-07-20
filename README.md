@@ -1,1 +1,1 @@
-First steps with c
+0x0E. C - Structures, typedef
