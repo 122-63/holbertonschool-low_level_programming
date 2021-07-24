@@ -5,6 +5,7 @@
  *
  * Return: 0
  */
+
 void print_char(va_list c)
 {
 	printf("%c", va_arg(c, int));
