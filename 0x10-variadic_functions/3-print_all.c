@@ -5,7 +5,6 @@
  *
  * Return: 0
  */
-
 void print_char(va_list c)
 {
 	printf("%c", va_arg(c, int));
@@ -90,6 +89,6 @@ void print_all(const char * const format, ...)
 		}
 		i++;
 	}
-	printf("\n");
+	putchar('\n');
 	va_end(ap);
 }
