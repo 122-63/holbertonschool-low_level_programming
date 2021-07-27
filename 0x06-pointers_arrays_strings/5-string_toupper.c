@@ -5,10 +5,11 @@
  * 
  * Return: Always 0.
  */
-char *string_toupper(char * letra)
+char *string_toupper(char *)
 {
 	int i;
-
+	char * letra;
+	
 	for (i = 0; i < letra[i]; i++)
 	{
 		if (letra[i] >= 'a' && letra[i] <= 'z')
