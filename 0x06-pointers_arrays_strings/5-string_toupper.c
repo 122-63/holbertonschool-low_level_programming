@@ -5,10 +5,9 @@
  * 
  * Return: Always 0.
  */
-char *string_toupper(char *)
+char *string_toupper(char * letra)
 {
 	int i;
-	char * letra;
 	
 	for (i = 0; i < letra[i]; i++)
 	{
