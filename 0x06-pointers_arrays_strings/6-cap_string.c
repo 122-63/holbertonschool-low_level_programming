@@ -1,20 +1,29 @@
 #include <stdlib.h>
+#include <ctype.h>
 #include "holberton.h"
 /**
  * cap_string - check the code
  * @mayu: puntero
  * Return: Always 0.
  */
-char *cap_string(char *mayu)
+char *cap_string(char *palabra)
 {
-	int i;
+	int P_letra;
 
-	for (i = 0; mayu[i]; i++)
+	for (P_letra = 1; *palabra; ++palabra)
 	{
-		if (mayu[i] >= 'a' && mayu[i] <= 'z')
+		if (P_letra && isalpha(*palabra))
 		{
-			mayu[i] = mayu[i] - 'a' + 'A';
+			*palabra = toupper(*palabra);
+			P_letra = 0;
+		}
+		if (*palabra == ' ' || *palabra == ',' || *palabra == ';'
+		    || *palabra == '.' || *palabra == '!' || *palabra == '?' ||
+		    *palabra == '"' || *palabra == '(' || *palabra == ')' ||
+		    *palabra == '{' || *palabra == '}')
+		{
+			P_letra = 1;
 		}
 	}
-	return (mayu);
+	return (palabra);
 }
