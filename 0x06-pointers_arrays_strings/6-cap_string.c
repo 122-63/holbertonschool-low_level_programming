@@ -3,7 +3,7 @@
 #include "holberton.h"
 /**
  * cap_string - check the code
- * @mayu: puntero
+ * @palabra: puntero
  * Return: Always 0.
  */
 char *cap_string(char *palabra)
